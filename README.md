@@ -9,6 +9,8 @@ publish a medium article by selecting sections of the output
 Generate a nice report - in medium.com. use savegpt extension to export your work to pdf, import and insert any images from chatgpt (screenshot extension) 
 submit the medium article
 
+Medium article link : https://medium.com/@devipriyassn.dp/prompt-engineering-5c18acbdf6b
+
 
 Assignment 2 : Cursor.so application
 
