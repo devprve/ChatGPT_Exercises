@@ -17,5 +17,6 @@ Reverse Prompt engineering-Data Science Tasks on Dataset.pdf
 Assignment 2 : Cursor.so application
 
 Use cursor.so to create a simple application
+Video Link : https://vimeo.com/861059783?share=copy
 
 index.html
