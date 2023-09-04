@@ -10,8 +10,12 @@ Generate a nice report - in medium.com. use savegpt extension to export your wor
 submit the medium article
 
 Medium article link : https://medium.com/@devipriyassn.dp/prompt-engineering-5c18acbdf6b
-
+Input dataset : Global YouTube Statistics.csv
+Assignment-YouTube Creators Analysis & Insights.pdf
+Reverse Prompt engineering-Data Science Tasks on Dataset.pdf
 
 Assignment 2 : Cursor.so application
 
 Use cursor.so to create a simple application
+
+index.html
