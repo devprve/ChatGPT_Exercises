@@ -1,0 +1,75 @@
+<script>
+  function displayDateTime() {
+    var currentDate = new Date();
+    var dateTimeString = currentDate.toLocaleString();
+    document.getElementById("datetime").innerHTML = dateTimeString;
+  }
+
+  window.onload = function() {
+    displayDateTime();
+    setInterval(displayDateTime, 1000);
+  };
+</script>
+
+<div id="datetime"></div>
+
+<script>
+  function displayDateTime() {
+    var currentDate = new Date();
+    var dateTimeString = currentDate.toLocaleString();
+    document.getElementById("datetime").innerHTML = dateTimeString;
+  }
+
+  window.onload = function() {
+    displayDateTime();
+    setInterval(displayDateTime, 1000);
+  };
+
+  function displayDayOfWeek() {
+    var currentDate = new Date();
+    var dayOfWeek = currentDate.toLocaleString('en-US', { weekday: 'long' });
+    document.getElementById("dayOfWeek").innerHTML = dayOfWeek;
+  }
+
+  function showDayOfWeek() {
+    displayDayOfWeek();
+    document.getElementById("dayOfWeekButton").style.display = "none";
+    document.getElementById("dayOfWeek").style.display = "block";
+  }
+
+  displayDayOfWeek();
+</script>
+
+<div id="datetime"></div>
+<div id="dayOfWeekButton">
+  <button onclick="showDayOfWeek()">Show Day of Week</button>
+</div>
+<div id="dayOfWeek" style="display: none;"></div>
+
+
+<script>
+  function generateUnitTestCase() {
+    describe('displayDateTime', function() {
+      it('should display the current date and time', function() {
+        var currentDate = new Date();
+        var dateTimeString = currentDate.toLocaleString();
+        var datetimeElement = document.getElementById("datetime");
+        expect(datetimeElement.innerHTML).toBe(dateTimeString);
+      });
+    });
+
+    describe('showDayOfWeek', function() {
+      it('should display the day of the week', function() {
+        var currentDate = new Date();
+        var dayOfWeek = currentDate.toLocaleString('en-US', { weekday: 'long' });
+        var dayOfWeekElement = document.getElementById("dayOfWeek");
+        expect(dayOfWeekElement.innerHTML).toBe(dayOfWeek);
+      });
+    });
+  }
+
+  generateUnitTestCase();
+</script>
+
+
+
